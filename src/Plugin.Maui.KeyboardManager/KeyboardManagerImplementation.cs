@@ -49,12 +49,26 @@ sealed class KeyboardManagerImplementation : IKeyboardManager
             return;
 
         started = true;
+        platform.KeyboardChanged -= OnPlatformKeyboardChanged;
+        platform.KeyboardChanged += OnPlatformKeyboardChanged;
         platform.Start();
         platform.SetAvoidanceMode(AvoidanceMode, Options.ExtraAvoidancePadding);
         platform.SetDismissOnTapOutside(dismissOnTapOutside);
         HookApplication();
         ApplyDismissOnTapOutside();
         ApplyPagePadding();
+    }
+
+    public void Stop()
+    {
+        if (!started)
+            return;
+
+        started = false;
+        UnhookApplication();
+        UnwatchInputs();
+        platform.KeyboardChanged -= OnPlatformKeyboardChanged;
+        platform.Stop();
     }
 
     public void Hide()
@@ -185,6 +199,16 @@ sealed class KeyboardManagerImplementation : IKeyboardManager
         app.PageAppearing += OnPageAppearing;
         app.PageDisappearing -= OnPageDisappearing;
         app.PageDisappearing += OnPageDisappearing;
+    }
+
+    void UnhookApplication()
+    {
+        var app = Application.Current;
+        if (app is null)
+            return;
+
+        app.PageAppearing -= OnPageAppearing;
+        app.PageDisappearing -= OnPageDisappearing;
     }
 
     void OnPageAppearing(object? sender, Page page)

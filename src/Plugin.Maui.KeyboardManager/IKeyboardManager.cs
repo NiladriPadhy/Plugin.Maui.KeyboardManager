@@ -95,4 +95,9 @@ public interface IKeyboardManager
     /// Starts platform listeners. Called by <c>UseKeyboardManager</c>; safe to call more than once.
     /// </summary>
     void Start();
+
+    /// <summary>
+    /// Stops platform listeners and unhooks page events.
+    /// </summary>
+    void Stop();
 }

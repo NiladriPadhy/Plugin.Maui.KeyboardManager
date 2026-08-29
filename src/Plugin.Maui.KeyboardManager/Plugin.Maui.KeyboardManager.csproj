@@ -29,8 +29,8 @@
     <PackageProjectUrl>https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager</PackageProjectUrl>
     <RepositoryUrl>https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <Version>1.0.0</Version>
-    <PackageReleaseNotes>Initial release: KeyboardManager.Hide / Show / DismissOnTapOutside / SetAvoidanceMode, plus visibility, height, focus, and safe-area events on Android and iOS.</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <PackageReleaseNotes>Reliability fixes for races, dispose/lifecycle, and lock or session correctness.</PackageReleaseNotes>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>

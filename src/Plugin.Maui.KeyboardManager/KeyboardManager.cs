@@ -131,6 +131,11 @@ public static class KeyboardManager
     public static KeyboardSnapshot GetSnapshot() => Current.GetSnapshot();
 
     /// <summary>
+    /// Stops platform listeners on the shared instance.
+    /// </summary>
+    public static void Stop() => Current.Stop();
+
+    /// <summary>
     /// Creates a manager that uses the platform keyboard.
     /// </summary>
     public static IKeyboardManager Create(KeyboardManagerOptions? options = null)
