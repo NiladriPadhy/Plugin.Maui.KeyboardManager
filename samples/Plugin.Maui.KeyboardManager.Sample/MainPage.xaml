@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Plugin.Maui.KeyboardManager.Sample.MainPage"
+             Title="KeyboardManager">
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+            <Label Text="A surprisingly common MAUI annoyance — hide, show, dismiss, resize/pan, and safe areas."
+                   FontSize="14" />
+
+            <Label x:Name="StatusLabel" FontFamily="Courier" FontSize="12" />
+            <Label x:Name="InsetsLabel" FontFamily="Courier" FontSize="12" />
+
+            <Label Text="Name" FontAttributes="Bold" />
+            <Entry x:Name="NameEntry" Placeholder="Tap Show to focus this field" />
+
+            <Label Text="Email" FontAttributes="Bold" />
+            <Entry x:Name="EmailEntry" Placeholder="email@example.com" Keyboard="Email" />
+
+            <Label Text="Notes (near the bottom)" FontAttributes="Bold" />
+            <Editor x:Name="NotesEditor"
+                    Placeholder="Keyboard should not cover this field"
+                    HeightRequest="96" />
+
+            <HorizontalStackLayout Spacing="8">
+                <Button Text="Hide" Clicked="OnHideClicked" />
+                <Button Text="Show name" Clicked="OnShowClicked" />
+            </HorizontalStackLayout>
+
+            <Label Text="Avoidance" FontAttributes="Bold" />
+            <Picker x:Name="AvoidancePicker" Title="Avoidance mode" SelectedIndexChanged="OnAvoidanceChanged" />
+
+            <HorizontalStackLayout Spacing="12">
+                <Label Text="Dismiss on tap outside" VerticalOptions="Center" />
+                <Switch x:Name="DismissSwitch" Toggled="OnDismissToggled" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

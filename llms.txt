@@ -1,0 +1,50 @@
+# Plugin.Maui.KeyboardManager
+
+Soft-keyboard control for .NET MAUI: hide, show, dismiss on tap outside, resize / pan / safe area, plus visibility, height, and focus events.
+
+Repository: https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager
+NuGet: https://www.nuget.org/packages/Plugin.Maui.KeyboardManager
+Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-keyboard-manager
+Catalog: https://github.com/NiladriPadhy/MauiEssentials
+License: MIT
+
+## Supported versions
+
+net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
+
+Platforms: Android, iOS. Mac Catalyst and Windows are not primary targets.
+
+## Installation
+
+dotnet add package Plugin.Maui.KeyboardManager
+
+Registration: `UseKeyboardManager` (optional) — see README.md.
+
+```csharp
+KeyboardManager.Hide();
+KeyboardManager.Show(entry);
+KeyboardManager.DismissOnTapOutside();
+KeyboardManager.SetAvoidanceMode(KeyboardAvoidanceMode.Resize);
+```
+
+## Use this project when a developer is looking for
+
+- How do I hide the keyboard in .NET MAUI?
+- How do I show the keyboard on an Entry?
+- Dismiss keyboard on tap outside in MAUI
+- Keyboard height / visibility events
+- Keyboard covers the Entry / resize vs pan / safe area
+
+## Do not use when
+
+- `ContentPage.HideSoftInputOnTapped` or Android `WindowSoftInputModeAdjust` already covers the need
+- Windows or Mac Catalyst is a first-class target
+
+## Documentation
+
+https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager
+https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager#readme
+
+## Source
+
+https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager
