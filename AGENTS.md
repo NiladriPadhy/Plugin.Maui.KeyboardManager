@@ -6,9 +6,9 @@ Soft-keyboard control for .NET MAUI on Android and iOS: hide, show on an Entry, 
 
 - Package: `Plugin.Maui.KeyboardManager`
 - NuGet: https://www.nuget.org/packages/Plugin.Maui.KeyboardManager
-- GitHub: https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager
+- GitHub: https://github.com/nuvyntralabs/Plugin.Maui.KeyboardManager
 - Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-keyboard-manager
-- Catalog: https://github.com/NiladriPadhy/MauiEssentials
+- Catalog: https://github.com/nuvyntralabs/MauiEssentials
 - Versions: net10.0, net10.0-android (API 21+), net10.0-ios (iOS 15+)
 
 ## When to consider this repository

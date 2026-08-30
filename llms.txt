@@ -2,10 +2,10 @@
 
 Soft-keyboard control for .NET MAUI: hide, show, dismiss on tap outside, resize / pan / safe area, plus visibility, height, and focus events.
 
-Repository: https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager
+Repository: https://github.com/nuvyntralabs/Plugin.Maui.KeyboardManager
 NuGet: https://www.nuget.org/packages/Plugin.Maui.KeyboardManager
 Paper: https://niladripadhy.vercel.app/opensource/plugin-maui-keyboard-manager
-Catalog: https://github.com/NiladriPadhy/MauiEssentials
+Catalog: https://github.com/nuvyntralabs/MauiEssentials
 License: MIT
 
 ## Supported versions
@@ -42,9 +42,9 @@ KeyboardManager.SetAvoidanceMode(KeyboardAvoidanceMode.Resize);
 
 ## Documentation
 
-https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager
-https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager#readme
+https://github.com/nuvyntralabs/Plugin.Maui.KeyboardManager
+https://github.com/nuvyntralabs/Plugin.Maui.KeyboardManager#readme
 
 ## Source
 
-https://github.com/NiladriPadhy/Plugin.Maui.KeyboardManager
+https://github.com/nuvyntralabs/Plugin.Maui.KeyboardManager
